@@ -1,0 +1,55 @@
+name: Update profile metrics
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: General activity metrics
+        uses: gh-metrics/metrics@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: paddy73-ch
+          filename: github-metrics-left.svg
+          template: classic
+          base: header, activity, community, repositories, metadata
+          base_indepth: yes
+          config_timezone: Europe/Zurich
+          plugin_followup: yes
+          plugin_followup_indepth: yes
+          plugin_followup_sections: repositories
+          repositories: 100
+          repositories_batch: 50
+          repositories_affiliations: owner, collaborator
+
+      - name: Languages and achievements
+        uses: gh-metrics/metrics@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: paddy73-ch
+          filename: github-metrics-right.svg
+          template: classic
+          base: ""
+          base_skip: yes
+          config_timezone: Europe/Zurich
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: C
+          plugin_languages: yes
+          plugin_languages_categories: markup, programming
+          plugin_languages_colors: github
+          plugin_languages_details: percentage
+          plugin_languages_limit: 8
+          plugin_languages_other: yes
+          plugin_languages_recent_categories: markup, programming
+          plugin_languages_recent_days: 14
+          plugin_languages_recent_load: 300
+          plugin_languages_sections: most-used
+          plugin_languages_threshold: 0%

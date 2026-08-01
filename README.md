@@ -1,16 +1,21 @@
-## Hi there 👋
+<!-- GitHub profile README -->
 
-<!--
-**paddy73-ch/paddy73-ch** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<div align="center">
+  <a href="https://u8views.com/github/paddy73-ch">
+    <img src="https://u8views.com/api/v1/github/profiles/paddy73-ch/views/day-week-month-total-count.svg" alt="Profile views">
+  </a>
+</div>
 
-Here are some ideas to get you started:
+<br>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<img src="/github-metrics-left.svg" align="left" width="49%" alt="GitHub metrics">
+<img src="/github-metrics-right.svg" align="right" width="49%" alt="Languages and achievements">
+
+<br clear="both">
+
+## Hallo, ich bin Patrick 👋
+
+Ich arbeite an Open-Source-Projekten rund um Reverse Proxies, Sicherheit und Automatisierung.
+
+- 🔭 Aktuell: [Zoraxy CrowdSec Bouncer](https://github.com/paddy73-ch/zoraxy_crowdsec_bouncer)
+- 💬 Gerne austauschen über Go, Docker, Reverse Proxies und Homelab-Themen.
